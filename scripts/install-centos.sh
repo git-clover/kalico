@@ -53,6 +53,7 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
+Nice=-15
 User=$USER
 RemainAfterExit=yes
 ExecStart=${PYTHONDIR}/bin/python ${SRCDIR}/klippy/klippy.py ${HOME}/printer.cfg -l /var/log/klippy.log
